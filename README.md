@@ -1,4 +1,4 @@
-# ntc-lead-scout
+# ntc-lead-generation (Lead Scout)
 
 **An AI lead-generation coach for any company.** Open this folder in
 Claude Code and it interviews you about your business, then helps you
@@ -82,22 +82,17 @@ so Mac users can skip this step.
 3. **Close the Claude app completely and open it again.**
 
 ### Step 4: Download this toolkit
-If someone shared this repository with you on GitHub:
-1. You need a free GitHub account. If you don't have one, go to
-   **https://github.com/signup** and create one, then send your
-   **username** to the person who shared this, so they can invite you.
-2. Open the invitation email from GitHub and click **View invitation** →
-   **Accept invitation**.
-3. On the repository page, click the green **Code** button →
-   **Download ZIP**.
-4. Find the ZIP in your **Downloads** folder. **Right-click** it →
+You don't need a GitHub account to download it.
+1. Go to **https://github.com/ntc3210/ntc-lead-generation-**.
+2. Click the green **Code** button → **Download ZIP**.
+3. Find the ZIP in your **Downloads** folder. **Right-click** it →
    **Extract All…** → **Extract** (Windows), or double-click it (Mac).
-5. The folder that comes out is called **ntc-lead-scout-main**. On
+4. The folder that comes out is called **ntc-lead-generation--main** (two hyphens). On
    Windows there is often a second folder of the same name *inside* it.
    **Open folders until you see one that contains a file called
    `CLAUDE.md`.** That's the right one.
-6. Move that folder somewhere easy, such as **Documents**. You can rename
-   it to **ntc-lead-scout**.
+5. Move that folder somewhere easy, such as **Documents**. You can rename
+   it to **lead-scout**.
 
 ### Step 5: Open it in Claude Code
 1. In the Claude desktop app, click the **Code** tab at the top.
