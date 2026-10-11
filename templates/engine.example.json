@@ -1,0 +1,42 @@
+{
+  "_read_me": "Copy this file to my-company/engine.json, then fill in the <...> parts. Never put real keys in this template or anywhere else in git. guide/engine-setup.md explains each field.",
+
+  "braveApiKey": "<your Brave Search API key: https://brave.com/search/api/>",
+  "searchCostHundredthsOfCent": 50,
+
+  "model": "claude-haiku-5-5",
+  "draftModel": "claude-sonnet-5-5",
+  "prices": {
+    "claude-haiku-5-5": { "inputCentsPerMTok": 10, "outputCentsPerMTok": 50,
+                          "longPrompt": { "overInputTokens": 100000, "inputCentsPerMTok": 50, "outputCentsPerMTok": 250 } },
+    "claude-sonnet-5-5": { "inputCentsPerMTok": 200, "outputCentsPerMTok": 1000 }
+  },
+
+  "budget": {
+    "dailyBaseCents": 200,
+    "approvedRewardCents": 100,
+    "repliedRewardCents": 500,
+    "maxBalanceCents": 5000
+  },
+  "maxModelCallsPerRun": 60,
+
+  "userAgent": "LeadScout/0.1 (+contact via the address in each email)",
+  "allowPersonalMailbox": false,
+  "noColdEmailCountries": ["DE"],
+  "consentRequiredCountries": ["CA"],
+
+  "sending": {
+    "_read_me": "route: by_hand (recommended) writes each approved email to my-company/outbox for you to send from your own mailbox. practice is for trying it out. ses is optional and advanced: see guide/engine-setup.md Part 5 first.",
+    "route": "by_hand",
+    "senderName": "<your name>",
+    "businessName": "<your company's name>",
+    "postalAddress": "<your company's real postal address, one line: required before any email is approved>",
+    "replyTo": "<optional: where replies go, e.g. you@yourcompany.com; delete this line if not needed>",
+
+    "_ses_only": "The lines below are only for the optional Amazon SES route.",
+    "fromAddress": "<SES only: you@your-sending-domain.com; delete if not using SES>",
+    "awsRegion": "<SES only: e.g. us-east-1; delete if not using SES>",
+    "awsProfile": "<SES only: e.g. lead-scout; delete if not using SES>",
+    "sesAwsRequirementConfirmed": false
+  }
+}
