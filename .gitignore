@@ -8,6 +8,8 @@ dist
 *.db-wal
 *.db-shm
 *.tgz
-.automaton/wallet.json
-.automaton/state.db
 
+
+# ntc-lead-scout: the user's own company data never leaves their computer.
+my-company/*
+!my-company/README.md
